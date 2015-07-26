@@ -41,6 +41,7 @@ var App = React.createClass({
   componentWillMount: function () {
     this.getRemoteUsers();
     if( localStorage.getItem('theme') === 'dark' ){
+      $('body').addClass('dark');
       this.setState({
         theme: classNames('dark'),
         formColor: classNames('card-panel', 'grey', 'lighten-5'),
