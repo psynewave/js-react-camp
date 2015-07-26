@@ -141,10 +141,12 @@ var App = React.createClass({
   render: function () {
     return (
       <div id="holder" className={this.state.theme}>
-        <h3>React Contact Manager</h3>
-        <InputForm formColor={this.state.formColor} addContact={this.addContact} />
-        <ListOfContacts selectedUsers={this.state.selectedUsers} users={this.state.users} removeUser={this.removeUser} />
-        <ChangeThemeButton buttonColor={this.state.buttonColor} changeTheme={this.changeTheme}/>
+        <div className="container">
+          <h3>React Contact Manager</h3>
+          <InputForm formColor={this.state.formColor} addContact={this.addContact} />
+          <ListOfContacts selectedUsers={this.state.selectedUsers} users={this.state.users} removeUser={this.removeUser} />
+          <ChangeThemeButton buttonColor={this.state.buttonColor} changeTheme={this.changeTheme}/>
+        </div>
       </div>
     )
   }
