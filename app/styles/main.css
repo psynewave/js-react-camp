@@ -1,0 +1,40 @@
+body, html {
+  height: 100%;
+}
+
+div#root {
+    height: 100%;
+}
+
+div#holder {
+    height: 100%;
+    padding: 20px
+}
+
+div#holder h3 {
+    margin-top: 0;
+}
+
+div#holder.dark {
+    background: lightslategrey;
+}
+
+div#holder.dark h3 {
+    color: white;
+}
+
+span.userNameLabel {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.userActionBtn {
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+button#ChangeThemeButton {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
