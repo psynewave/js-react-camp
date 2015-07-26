@@ -1,5 +1,7 @@
 Parse.initialize("ahD3e6Psxd8aLPLNwv6jb30cPDOZlqKRVgbsNpsi", "F73cixO5RJBs11FLcBi0EyQaNkaOJPMUZc5VX5fC");
 
+require('../styles/main.css');
+
 var React = require('react');
 var ReactDOM = require('react-dom');
 var InputForm = require('./components/InputForm.jsx');
