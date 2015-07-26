@@ -125,6 +125,7 @@ var App = React.createClass({
   },
   changeTheme: function () {
     if( localStorage.getItem('theme') === 'dark' ){
+      $('body').removeClass('dark').addClass('light');
       localStorage.removeItem('theme');
       this.setState({
         theme: classNames('light'),
@@ -132,6 +133,7 @@ var App = React.createClass({
         buttonColor: classNames('btn', 'waves-effect', 'waves-purple', 'blue')
       });
     } else {
+      $('body').addClass('dark').removeClass('light');
       localStorage.setItem('theme', 'dark');
       this.setState({
         theme: classNames('dark'),
